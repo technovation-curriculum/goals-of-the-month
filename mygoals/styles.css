@@ -1,0 +1,94 @@
+/* Reset some basic styles */
+body, h1, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #001f3f; /* Navy Blue */
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Input and Button Row */
+#goalInput {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #c0c0c0; /* Silver */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#goalInput:focus {
+    border-color: #001f3f; /* Navy when focused */
+    outline: none;
+}
+
+#addGoalBtn {
+    padding: 12px 18px;
+    margin-left: 10px;
+    border: none;
+    background-color: #001f3f; /* Navy Blue */
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addGoalBtn:hover {
+    background-color: #003366; /* Darker Navy */
+}
+
+/* Goals List */
+ul {
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+}
+
+li {
+    background-color: #f0f4f8;
+    padding: 14px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #e1e8ed;
+}
+
+/* Completed Goals */
+li.completed {
+    text-decoration: line-through;
+    color: #7a7a7a;
+    background-color: #dfe6ec;
+}
+
